@@ -26,12 +26,12 @@ namespace CollectionsDemo
             Stack s1=new Stack();   
             s1.Push(1);
             s1.Push(2);
-            s1.Push("dfsfs");
+            s1.Push("Jack");
             ArrayList list = new ArrayList();
             list.Add(1);
             list.Add(2);
             list.Add(3.34f);
-            list.Add("dsfs");
+            list.Add("Jim");
             list.Add('A');
             foreach (object i in list) {
                 Console.WriteLine(i);
@@ -89,13 +89,14 @@ namespace CollectionsDemo
             s2.Push(200);
             s2.Push(300);
 
-            list.SetRange(0, s2);
+            list.SetRange(0, s2);//over writes the 3 elements  from 0th elements
             Console.WriteLine("After set range");
             Console.WriteLine("-------------------");
             foreach (var item in list)
             {
                 Console.WriteLine(item);
             }
+
 
 
 
